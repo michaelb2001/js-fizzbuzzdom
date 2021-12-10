@@ -7,30 +7,28 @@ for(i; i<101; i++ ){
 
     //controllo se è un multiplo di 3 e 5 escludendo lo 0 
     if( (i % 3 == 0) && (i % 5 == 0) && (i !=0 ) ){
-        //console.log(i + " fizzbuzz");
+        
         document.getElementById("container").innerHTML +=
-        '<div class=box fizzbuzz>'+i+'</div>';
+        '<div class="box fizzbuzz">'+i+'</div>';
+        
 
 
     //controllo se è un multiplo di 3 escludendo lo 0 
     } else if( (i % 3 == 0) && (i !=0 ) ){
 
-        //console.log(i + " fizz");
-        document.getElementById("container").innerHTML +=
-        '<div class=box fizz>'+i+'</div>';
+     document.getElementById("container").innerHTML +=
+        '<div class="box fizz">'+i+'</div>';
 
     //controllo se è un multiplo di 5 escludendo lo 0 
     } else if( (i % 5 == 0) && (i !=0 ) ){
-        //console.log(i + " buzz");
         document.getElementById("container").innerHTML +=
-        '<div class=box buzz>'+i+'</div>';
+        '<div class="box buzz">'+i+'</div>';
 
 
     //altrimenti stampo semplicemente il numero
     } else {
-        //console.log(i);
         document.getElementById("container").innerHTML +=
-        '<div class=box normale>'+i+'</div>';
+        '<div class="box">'+i+'</div>';
     }
 
 };
