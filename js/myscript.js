@@ -1,16 +1,36 @@
-element = document.getElementById("container");
+element = document.getElementById("container").innerHTML;
 let i = 0;
+
+//creo i numeri da 0 a 100
 for(i; i<101; i++ ){
 
+
+    //controllo se è un multiplo di 3 e 5 escludendo lo 0 
     if( (i % 3 == 0) && (i % 5 == 0) && (i !=0 ) ){
-        console.log(i + " fizzbuzz");
+        //console.log(i + " fizzbuzz");
+        document.getElementById("container").innerHTML +=
+        '<div class=box fizzbuzz>'+i+'</div>';
+
+
+    //controllo se è un multiplo di 3 escludendo lo 0 
     } else if( (i % 3 == 0) && (i !=0 ) ){
 
-        console.log(i + " fizz");
+        //console.log(i + " fizz");
+        document.getElementById("container").innerHTML +=
+        '<div class=box fizz>'+i+'</div>';
+
+    //controllo se è un multiplo di 5 escludendo lo 0 
     } else if( (i % 5 == 0) && (i !=0 ) ){
-        console.log(i + " buzz");
+        //console.log(i + " buzz");
+        document.getElementById("container").innerHTML +=
+        '<div class=box buzz>'+i+'</div>';
+
+
+    //altrimenti stampo semplicemente il numero
     } else {
-        console.log(i);
+        //console.log(i);
+        document.getElementById("container").innerHTML +=
+        '<div class=box normale>'+i+'</div>';
     }
 
 };
