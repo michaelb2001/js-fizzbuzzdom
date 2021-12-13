@@ -9,7 +9,7 @@ for(i; i<101; i++ ){
     if( (i % 3 == 0) && (i % 5 == 0) && (i !=0 ) ){
         
         document.getElementById("container").innerHTML +=
-        '<div class="box fizzbuzz">'+i+'</div>';
+        '<div class="box fizzbuzz"> fizzbuzz </div>';
         
 
 
@@ -17,12 +17,12 @@ for(i; i<101; i++ ){
     } else if( (i % 3 == 0) && (i !=0 ) ){
 
      document.getElementById("container").innerHTML +=
-        '<div class="box fizz">'+i+'</div>';
+        '<div class="box fizz"> fizz </div>';
 
     //controllo se è un multiplo di 5 escludendo lo 0 
     } else if( (i % 5 == 0) && (i !=0 ) ){
         document.getElementById("container").innerHTML +=
-        '<div class="box buzz">'+i+'</div>';
+        '<div class="box buzz"> buzz </div>';
 
 
     //altrimenti stampo semplicemente il numero
